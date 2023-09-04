@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+.swiper {
+    background-image: url('https://i.pinimg.com/564x/0d/ca/5f/0dca5f0d84bf718864d4a09a6fbb83eb.jpg');
+    background-size: cover;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.slideItem {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+}
