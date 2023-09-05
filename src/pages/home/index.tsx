@@ -7,7 +7,7 @@ export const Home = ()=>{
         <>
             <HomeApp
                 title='Comunidade Web Simpsons'
-                subtitle='Loren ipsum'
+                
             />
         </>
     )

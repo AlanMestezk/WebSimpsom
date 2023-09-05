@@ -40,92 +40,75 @@
     color: rgb(255, 255, 255);
 }
 
+.sectiontile h2 {
+    margin-top: 30px;
+    color: aliceblue;
+}
+
 .persons {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     border-radius: 20px;
     height: 100px;
 }
 
 .divPerson {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px;
-    margin: 15px 15px 0;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    margin: auto 70px auto;
     cursor: pointer;
+    object-fit: cover;
 }
 
-.image1 {
-    width: 50%;
+.divPerson:hover {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.image {
+    height: 60px;
     object-fit: cover;
+    width: 60px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.image:hover {
+    height: 108px;
+    object-fit: cover;
+    width: 80px;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.image2 {
-    width: 80%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.5s;
+.divPerson strong {
+    font-size: 13px;
+    color: aliceblue;
 }
 
-.image3 {
-    width: 60%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.image4 {
-    width: 60%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.image5 {
-    width: 87%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-
-/*Animation*/
-
-.image1:hover {
-    width: 100%;
-}
-
-.image2:hover {
-    width: 130%;
-}
-
-.image3:hover {
-    width: 130%;
-}
-
-.image4:hover {
-    width: 120%;
-}
-
-.image5:hover {
-    width: 140%;
-}
-
-
-/*Names*/
-
-.divPerson span {
-    font-weight: bolder;
-    font-size: 12px;
-    margin-right: -6px;
+@media(max-width: 610px) {
+    .divPerson {
+        margin: auto 10px auto;
+    }
+    .image {
+        width: 30px;
+        height: 50px;
+    }
+    .divPerson strong {
+        font-size: 6px;
+    }
+    .image:hover {
+        width: 30px;
+        height: 50px;
+    }
 }

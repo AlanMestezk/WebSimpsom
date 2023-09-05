@@ -6,7 +6,7 @@ export const Header = ()=>{
         <header className={style.header}>
 
             <h3 className={style.title}>
-                <Link to='/'>WEB SIMPSON</Link>
+                <Link to='/'>WEB SIMPSONS</Link>
             </h3>
 
             <div className={style.divButton}>

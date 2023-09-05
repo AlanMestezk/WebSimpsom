@@ -7,12 +7,11 @@ import style from './Home.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import {  EffectCards} from 'swiper/modules'
 
-import bart from '../../assets/bart.png'
-import homer from '../../assets/homer.png'
-import lisa from '../../assets/lisa.png'
-import maggie from '../../assets/maggie (2).png'
-import marge from '../../assets/pngwing.com (10).png'
-
+import bart from '../../assets/BartW.png'
+import homer from '../../assets/HomerW.png'
+import lisa from '../../assets/LisaW.png'
+import maggie from '../../assets/MaggieW.png'
+import marge from '../../assets/pngwing.com (8).png'
 
 interface HomeProps{
     title: string
@@ -68,48 +67,74 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
                 <section className={style.sectiontile}>
 
                     <h1 className={style.title}>{title}</h1>
-                    <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tenetur labore nihil consequuntur natus dicta et doloremque commodi, esse autem quisquam unde harum mollitia odit optio ipsum voluptas. Error, repudiandae.</strong>
+                    <strong>
+                        A FAMILIA AMARELA MAIS AMADA DO MUNDO AGORA TEM COMUNIDADE!
+                    </strong>
+                    <h2>
+                       clique nos icones abaixo e descubra curiosidades sobre eles
+                    </h2>
 
                 </section>
 
-                <section>
+               
                 <section className={style.persons}>
-                        
+                       
                         <div className={style.divPerson}>
-                            
-                            <span>Homer</span>
-                             <img className={style.image1} src={homer} alt="homer" />   
-                           
+                            <img 
+                                className={style.image} 
+                                src={homer} 
+                                alt="homer" 
+                            />
+                            <div>
+                                <strong>Homer</strong>
+                            </div>
                         </div>
-    
+
                         <div className={style.divPerson}>
-                            <span>Marge</span>
-                            <img className={style.image2} src={marge} alt="marge" />
-    
+                            <img 
+                                className={style.image} 
+                                src={marge} 
+                                alt="marge" 
+                            />
+                            <div>
+                                <strong>Marge</strong>
+                            </div>
                         </div>
-    
+
                         <div className={style.divPerson}>
-                            <span>nome</span>
-                            <img className={style.image3} src={bart} alt="bart" />
-                            
+                            <img 
+                                className={style.image} 
+                                src={bart} 
+                                alt="bart" 
+                            />
+                            <div>
+                                <strong>Bart</strong>
+                            </div>
                         </div>
-    
+
                         <div className={style.divPerson}>
-                            <span>nome</span>
-                            <img className={style.image4} src={lisa} alt="lisa" />
-                            
+                            <img 
+                                className={style.image} 
+                                src={lisa} 
+                                alt="lisa" 
+                            />
+                            <div>
+                                <strong>Lisa</strong>
+                            </div>
                         </div>
-                        
+
                         <div className={style.divPerson}>
-                            <span>nome</span>
-                            <img className={style.image5} src={maggie} alt="maggie" />
+                            <img 
+                                className={style.image} 
+                                src={maggie} 
+                                alt="maggie" 
+                            />
+                            <div>
+                                <strong>Maggie</strong>
+                            </div>
                         </div>
-    
-                    </section>
 
                 </section>
-
-                
 
             </main>
         </>
