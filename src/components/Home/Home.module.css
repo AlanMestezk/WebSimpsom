@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 .container {
     display: flex;
     flex-direction: column;
@@ -18,4 +19,113 @@
     width: auto;
     height: 400px;
     object-fit: cover;
+}
+
+.sectiontile {
+    padding: 12px;
+}
+
+.title {
+    font-size: 45px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bolder;
+    color: rgb(233, 219, 27);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.sectiontile strong {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.persons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    border-radius: 20px;
+    height: 100px;
+}
+
+.divPerson {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 15px 15px 0;
+    cursor: pointer;
+}
+
+.image1 {
+    width: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.image2 {
+    width: 80%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.image3 {
+    width: 60%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.image4 {
+    width: 60%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.image5 {
+    width: 87%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/*Animation*/
+
+.image1:hover {
+    width: 100%;
+}
+
+.image2:hover {
+    width: 130%;
+}
+
+.image3:hover {
+    width: 130%;
+}
+
+.image4:hover {
+    width: 120%;
+}
+
+.image5:hover {
+    width: 140%;
+}
+
+
+/*Names*/
+
+.divPerson span {
+    font-weight: bolder;
+    font-size: 12px;
+    margin-right: -6px;
 }
