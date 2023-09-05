@@ -1,0 +1,145 @@
+    .main {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .containerTitle {
+        background-image: linear-gradient( 111.4deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+        border-radius: 30px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .containerTitle h1 {
+        font-size: 25px;
+        color: rgb(211, 214, 24);
+    }
+    
+    .containerTitle strong {
+        color: rgb(211, 214, 24);
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .containerTool1 {
+        margin-top: 40px;
+        padding: 12px;
+    }
+    
+    .containerTool1 h3 {
+        color: aliceblue;
+        font-size: 30px;
+    }
+    
+    .containerTool {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        margin-top: 18px;
+    }
+    
+    .divLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .containerImg {
+        margin-top: 22px;
+        background-color: aliceblue;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #FF0099;
+        background: -webkit-linear-gradient(to right, #493240, #FF0099);
+        background: linear-gradient(to right, #493240, #FF0099);
+        margin: 12px 12px auto;
+    }
+    
+    .divLogo .logo {
+        width: 80px;
+        object-fit: cover;
+        transition: 0.8s;
+    }
+    
+    .divLogo .logo:hover {
+        width: 100px;
+    }
+    
+    .nomeLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 13px;
+    }
+    
+    .nomeLogo strong {
+        color: aliceblue;
+        font-size: 22px;
+    }
+    
+    .nomeLogo a {
+        text-decoration: none;
+    }
+    
+    .nomeLogo a span {
+        background: #b60e84;
+        background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+        background: linear-gradient(to right, #b91d73, #9c4081);
+        margin-top: 13px;
+        height: 30px;
+        width: 100px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        color: rgb(248, 248, 179);
+        border: solid 2px rgb(248, 248, 179);
+        cursor: pointer;
+    }
+    
+    .nomeLogo span:hover {
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    }
+    
+    .footer {
+        margin-top: 40px;
+    }
+    
+    .footer .descriptionFooter h2 {
+        font-size: 28px;
+        color: aliceblue;
+    }
+    
+    .footer .descriptionFooter h3 {
+        color: aliceblue;
+        margin-top: 20px;
+    }
+    
+    .footer .descriptionFooter a {
+        text-decoration: none;
+    }
+    
+    .footer .descriptionFooter a strong {
+        font-size: 15px;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 1px;
+        border: solid 1px #9c4081;
+        margin-top: 8px;
+    }

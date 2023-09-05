@@ -102,7 +102,7 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
                         A FAMILIA AMARELA MAIS AMADA DO MUNDO AGORA TEM COMUNIDADE!
                     </strong>
                     <h2>
-                       clique nos icones abaixo e descubra curiosidades sobre eles
+                       clique nos icones abaixo e descubra curiosidades sobre os integrantes dos simpsons
                     </h2>
 
                 </section>
