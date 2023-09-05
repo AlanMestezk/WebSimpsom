@@ -1,5 +1,5 @@
 //import { Link } from 'react-router-dom'
-//import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './Home.module.css'
 //import logo from '../../assets/logoWebSimpsom.png'
 
@@ -12,6 +12,9 @@ import homer from '../../assets/HomerW.png'
 import lisa from '../../assets/LisaW.png'
 import maggie from '../../assets/MaggieW.png'
 import marge from '../../assets/pngwing.com (8).png'
+import matt from '../../assets/matt.jpg'
+import load from '../../assets/Loadindingg.gif'
+
 
 interface HomeProps{
     title: string
@@ -19,6 +22,18 @@ interface HomeProps{
 }
 
 export const HomeApp = ({title, subtitle}: HomeProps)=>{
+
+    const [isLoad, setIsload] = useState(true)
+
+    useEffect(
+        ()=>{
+            setTimeout(
+                () => {
+                    setIsload(false)
+                }, 4000
+            )
+        }, []
+    )
 
 
     const data = [
@@ -29,7 +44,23 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
         {id: '5', image:'https://wallpaperaccess.com/full/2439440.jpg'}
     ]
 
+    if(isLoad){
+        return(
+            <>  
+                <main className={style.mainLoad}>
+
+                    <img
+                        src={load}
+                        alt="carregando"
+                        className={style.imgLoad}
+                    />
+                </main>
+            </>
+        )
+    }
+
     return(
+
         <>
             <main className={style.container}>
 
@@ -132,6 +163,31 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
                             <div>
                                 <strong>Maggie</strong>
                             </div>
+                        </div>
+
+                </section>
+
+                <section className={style.containerCre}>
+
+                        <div className={style.creTitle}>
+
+                                <h3>Aqui vai um breve resumo de como surgiu a serie:</h3>
+                                <h2>
+                                Groening concebeu a ideia para os Simpsons no saguão do escritório de James L. Brooks e rapidamente esboçou sua versão de uma família disfuncional: Homer, o pai obeso; Marge, a mãe esguia; Bart, o filho mais velho malcriado; Lisa, a filha inteligente do meio; e Maggie, a bebê.
+                                </h2>
+                                
+                                <div>
+                                    <img 
+                                        className={style.mattImage}
+                                        src={matt} 
+                                        alt="Matt Groening"
+                                     />
+
+                                    <strong>Saber mais</strong>
+
+                                </div>
+
+
                         </div>
 
                 </section>
