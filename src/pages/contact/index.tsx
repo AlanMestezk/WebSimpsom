@@ -1,8 +1,11 @@
+import { ContactApp } from "../../components/Contact/ContactApp"
+
+
 export const Contact = ()=>{
 
     return(
-        <div>
-            <h1>Contato</h1>
-        </div>
+        <>
+            <ContactApp/>
+        </>
     )
 }

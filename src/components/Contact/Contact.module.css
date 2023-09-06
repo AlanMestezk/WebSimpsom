@@ -1,0 +1,156 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+.containerTitle {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    margin: 12px 12px 12px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+    width: 100%;
+}
+
+.containerTitle h1 {
+    font-size: 26px;
+    color: yellow;
+}
+
+.containerTitle strong {
+    color: yellow;
+}
+
+.containerData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.sectionIcon {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.sectionIcon img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.sectionDataCreator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.containerNetwork {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.networks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.iconsNetwork {
+    width: 70%;
+    transition: 0.5s;
+}
+
+.iconsNetwork:hover {
+    width: 80px;
+}
+
+.sectionNet {
+    background-color: #0f0c29;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.titleIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleIcons strong {
+    font-size: 15px;
+}
+
+.titleIcons a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.titleIcons a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+    color: rgb(218, 218, 110);
+    border-radius: 30px;
+    border: solid 2px rgb(199, 199, 80);
+    transition: 8s;
+}
+
+.titleIcons a span:hover {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    color: yellow;
+    border: solid 2px yellow;
+}
+
+.footer h2 {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+@media(max-width: 610px) {
+    .sectionNet {
+        width: 70px;
+        height: 70px;
+    }
+    .titleIcons a span {
+        font-size: 10px;
+        width: 60px;
+    }
+}
