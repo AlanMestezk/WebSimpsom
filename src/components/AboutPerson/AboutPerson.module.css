@@ -144,6 +144,37 @@
     text-decoration: none;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .divButtonFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #24243e;
+    width: 70px;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: solid 2px #FF3CAC;
+    cursor: pointer;
+}
+
+.footer .divButtonFooter:hover {
+    background-color: #FF3CAC;
+    border: solid 4px #24243e;
+}
+
+.footer .divButtonFooter a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
 @media(max-width: 610px) {
     .footer .containerGif {
         display: flex;

@@ -1,6 +1,6 @@
 
 import { AboutPerson } from "../AboutPerson/AboutPerson"
-import { useEffect } from "react"
+
 
 import lisa from '../../assets/lisa11.png'
 import lisa2 from '../../assets/lisa12.png'
@@ -10,9 +10,6 @@ import lisaGif2 from '../../assets/lisaGif2.gif'
 
 export const LisaSimpsonApp = ()=>{
 
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-      }, []);
 
    return(
         <>

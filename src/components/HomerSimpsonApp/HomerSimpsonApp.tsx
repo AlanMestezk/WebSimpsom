@@ -4,13 +4,9 @@ import homerAbout from '../../assets/homerAbout.png'
 import homerAbout2 from '../../assets/homerAbout2.png'
 import homerGif from '../../assets/homerGif.gif'
 import homerGif2 from '../../assets/homerGif2.gif'
-import { useEffect } from "react"
+
 
 export const HomerSimpsonApp = ()=>{
-
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-      }, []);
 
     return(
 

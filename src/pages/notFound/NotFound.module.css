@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+.divImg {
+    margin-top: 50px;
+}
+
+.divImg img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 5px black;
+}
+
+.divText {
+    margin-top: 10px;
+}
+
+.divText h1 {
+    font-size: 50px;
+    color: yellow;
+    font-family: 'Permanent Marker', cursive;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #000;
+}
+
+.divText strong {
+    font-size: 30px;
+    color: yellow;
+    font-family: 'Permanent Marker', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+.divButton {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButton div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 121, 177);
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    border: solid 2.7px #FF3CAC;
+    cursor: pointer;
+}
+
+.divButton div:hover {
+    background-color: #FF3CAC;
+    border: solid 4px rgb(38, 121, 177);
+}
+
+.divButton a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+@media(max-width: 610px) {
+    .divText h1 {
+        font-size: 30px;
+        color: yellow;
+        font-family: 'Permanent Marker', cursive;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #000;
+    }
+    .divText strong {
+        font-size: 20px;
+        color: yellow;
+        font-family: 'Permanent Marker', cursive;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+    }
+}

@@ -1,6 +1,5 @@
 
 import { AboutPerson } from "../AboutPerson/AboutPerson"
-import { useEffect } from "react"
 
 import bart from '../../assets/bart11.png'
 import bart2 from '../../assets/bart12.png'
@@ -9,9 +8,7 @@ import bartGif2 from '../../assets/bartGif2.gif'
 
 export const BartsimpsonApp = ()=>{
 
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-      }, []);
+
 
     return(
         <>

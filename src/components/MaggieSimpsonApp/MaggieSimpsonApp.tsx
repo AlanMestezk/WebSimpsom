@@ -1,5 +1,5 @@
 import { AboutPerson } from "../AboutPerson/AboutPerson"
-import { useEffect } from "react"
+
 
 import maggie from '../../assets/maggie11.png'
 import maggie2 from '../../assets/maggie12.png'
@@ -9,9 +9,6 @@ import maggieGif2 from '../../assets/maggieGIf2.gif'
 
 export const MaggieSimpsonApp = ()=>{
 
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-      }, []);
 
     return(
         <>

@@ -14,7 +14,7 @@ import lisa from '../../assets/LisaW.png'
 import maggie from '../../assets/MaggieW.png'
 import marge from '../../assets/pngwing.com (8).png'
 import matt from '../../assets/matt.jpg'
-import load from '../../assets/Loadindingg.gif'
+import load from '../../assets/homer-simpson.gif'
 
 
 interface HomeProps{
@@ -28,14 +28,14 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
 
     useEffect(() => {
         window.scrollTo(0, 0); 
-      }, []);
+    }, []);
 
     useEffect(
         ()=>{
             setTimeout(
                 () => {
                     setIsload(false)
-                }, 2000
+                }, 1000
             )
         }, []
     )
@@ -59,6 +59,7 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
                         alt="carregando"
                         className={style.imgLoad}
                     />
+                    <strong>Carregando...</strong>
                 </main>
             </>
         )

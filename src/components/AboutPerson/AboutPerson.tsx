@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom'
 import style from './AboutPerson.module.css'
+import { useEffect } from 'react'
 
 interface AboutPersonProps{
     img: string
@@ -16,6 +17,10 @@ interface AboutPersonProps{
 }
 
 export const AboutPerson = ({img, name, description, about1, about2, img2, gif, gif2, moments, title}: AboutPersonProps) =>{
+
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    }, []);
 
     return(
 
@@ -103,6 +108,18 @@ export const AboutPerson = ({img, name, description, about1, about2, img2, gif, 
 
                         </div>
                         
+                    </div>
+
+                </section>
+
+                <section className={style.footer}>
+
+                    <div className={style.divButtonFooter}>
+
+                        <Link to='/'>
+                            HOME
+                        </Link>
+
                     </div>
 
                 </section>

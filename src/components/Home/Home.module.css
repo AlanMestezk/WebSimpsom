@@ -14,14 +14,26 @@
     min-height: 100vh;
     width: 100%;
     text-align: center;
-    padding: 12px;
     justify-content: center;
     align-items: center;
-    background-color: hsl(49, 94%, 55%);
 }
 
 .mainLoad .imgLoad {
-    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 6px yellow;
+}
+
+.mainLoad strong {
+    font-size: 45px;
+    color: yellow;
+    font-family: 'Permanent Marker', cursive;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
 }
 
 .swiper {

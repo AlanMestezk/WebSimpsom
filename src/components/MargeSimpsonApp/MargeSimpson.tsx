@@ -1,6 +1,6 @@
 
 import { AboutPerson } from "../AboutPerson/AboutPerson"
-import { useEffect } from "react"
+
 
 import marge from '../../assets/marge1.png'
 import marge2 from '../../assets/margeIconAbout.jpeg'
@@ -9,9 +9,6 @@ import margeGif2 from '../../assets/MargeGif2.gif'
 
 export const MargeSimpsonApp = ()=>{
 
-    useEffect(() => {
-        window.scrollTo(0, 0); 
-      }, []);
 
     return (
         <>
