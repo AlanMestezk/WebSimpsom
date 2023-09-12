@@ -1,0 +1,170 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.perfil .imgPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.perfil .imgPerfil .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.perfil .divName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 8px;
+}
+
+.perfil .divName h1 {
+    font-size: 18px;
+    color: yellow;
+}
+
+.perfil .personAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 8px 8px;
+    border-radius: 20px;
+}
+
+.perfil .personAbout strong {
+    color: aliceblue;
+}
+
+.aboutContainer {
+    padding: 12px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    border-radius: 30px;
+}
+
+.aboutContainer .aboutPerson {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutContainer .aboutPerson h4 {
+    font-size: 20px;
+    color: yellow;
+}
+
+.aboutContainer .aboutPerson .imgAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.aboutContainer .aboutPerson .imgAbout .imgIcon {
+    width: 200px;
+}
+
+.aboutContainer .aboutPerson .textAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutContainer .aboutPerson .textAbout .about {
+    color: yellow;
+    font-size: 15PX;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 12px;
+}
+
+.footer .divMoments strong {
+    color: aliceblue;
+}
+
+.footer .containerGif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0f0c29;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.footer .containerGif .gif1 {
+    width: 300px;
+    padding: 12px;
+    border-radius: 30px;
+    height: 200px;
+}
+
+.footer .containerGif .gif2 {
+    width: 300px;
+    padding: 12px;
+    border-radius: 30px;
+    height: 200px;
+}
+
+.divButton a {
+    text-decoration: none;
+}
+
+@media(max-width: 610px) {
+    .footer .containerGif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0f0c29;
+        width: 100%;
+        height: 200px;
+        border-radius: 30px;
+        padding: 12px;
+    }
+    .footer .containerGif .gif1 {
+        width: 150px;
+        height: 100px;
+        padding: 12px;
+        border-radius: 30px;
+    }
+    .footer .containerGif .gif2 {
+        width: 150px;
+        height: 100px;
+        padding: 12px;
+        border-radius: 30px;
+    }
+}

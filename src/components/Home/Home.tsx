@@ -1,5 +1,6 @@
 //import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import style from './Home.module.css'
 //import logo from '../../assets/logoWebSimpsom.png'
 
@@ -25,12 +26,16 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
 
     const [isLoad, setIsload] = useState(true)
 
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+      }, []);
+
     useEffect(
         ()=>{
             setTimeout(
                 () => {
                     setIsload(false)
-                }, 4000
+                }, 2000
             )
         }, []
     )
@@ -110,60 +115,76 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
                
                 <section className={style.persons}>
                        
-                        <div className={style.divPerson}>
-                            <img 
-                                className={style.image} 
-                                src={homer} 
-                                alt="homer" 
-                            />
-                            <div>
-                                <strong>Homer</strong>
+                        <Link to='/homer-simpson-about'>
+                            <div className={style.divPerson}>
+                                <img 
+                                    className={style.image} 
+                                    src={homer} 
+                                    alt="homer" 
+                                />
+                                <div>
+                                    <strong>Homer</strong>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className={style.divPerson}>
-                            <img 
-                                className={style.image} 
-                                src={marge} 
-                                alt="marge" 
-                            />
-                            <div>
-                                <strong>Marge</strong>
+                        <Link to='/marge-simpson-about'>
+                        
+                            <div className={style.divPerson}>
+                                <img 
+                                    className={style.image} 
+                                    src={marge} 
+                                    alt="marge" 
+                                />
+                                <div>
+                                    <strong>Marge</strong>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className={style.divPerson}>
-                            <img 
-                                className={style.image} 
-                                src={bart} 
-                                alt="bart" 
-                            />
-                            <div>
-                                <strong>Bart</strong>
-                            </div>
-                        </div>
+                        <Link to='/bart-simpson-about'>
 
-                        <div className={style.divPerson}>
-                            <img 
-                                className={style.image} 
-                                src={lisa} 
-                                alt="lisa" 
-                            />
-                            <div>
-                                <strong>Lisa</strong>
+                            <div className={style.divPerson}>
+                                <img 
+                                    className={style.image} 
+                                    src={bart} 
+                                    alt="bart" 
+                                />
+                                <div>
+                                    <strong>Bart</strong>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
-                        <div className={style.divPerson}>
-                            <img 
-                                className={style.image} 
-                                src={maggie} 
-                                alt="maggie" 
-                            />
-                            <div>
-                                <strong>Maggie</strong>
+                        <Link to='/lisa-simpson-about'>
+                        
+                            <div className={style.divPerson}>
+                                <img 
+                                    className={style.image} 
+                                    src={lisa} 
+                                    alt="lisa" 
+                                />
+                                <div>
+                                    <strong>Lisa</strong>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+                        
+                        <Link to='/maggie-simpson-about'>
+
+                            <div className={style.divPerson}>
+                                <img 
+                                    className={style.image} 
+                                    src={maggie} 
+                                    alt="maggie" 
+                                />
+                                <div>
+                                    <strong>Maggie</strong>
+                                </div>
+                            </div>
+                        
+                        </Link>
+
 
                 </section>
 
@@ -173,7 +194,7 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
 
                                 <h3>Aqui vai um breve resumo de como surgiu a serie:</h3>
                                 <h2>
-                                Groening concebeu a ideia para os Simpsons no saguão do escritório de James L. Brooks e rapidamente esboçou sua versão de uma família disfuncional: Homer, o pai obeso; Marge, a mãe esguia; Bart, o filho mais velho malcriado; Lisa, a filha inteligente do meio; e Maggie, a bebê.
+                                    Groening concebeu a ideia para os Simpsons no saguão do escritório de James L. Brooks e rapidamente esboçou sua versão de uma família disfuncional: Homer, o pai obeso; Marge, a mãe esguia; Bart, o filho mais velho malcriado; Lisa, a filha inteligente do meio; e Maggie, a bebê.
                                 </h2>
                                 
                                 <div>
@@ -183,7 +204,12 @@ export const HomeApp = ({title, subtitle}: HomeProps)=>{
                                         alt="Matt Groening"
                                      />
 
-                                    <strong>Saber mais</strong>
+                                    <strong>
+                                        <Link to='https://pt.wikipedia.org/wiki/Matt_Groening'>
+                                            Saber mais
+                                        </Link>
+                                    </strong>
+                                    
 
                                 </div>
 

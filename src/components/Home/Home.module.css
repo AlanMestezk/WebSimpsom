@@ -72,6 +72,10 @@
     height: 100px;
 }
 
+.persons a {
+    text-decoration: none;
+}
+
 .divPerson {
     display: flex;
     justify-content: center;
@@ -110,23 +114,6 @@
 .divPerson strong {
     font-size: 13px;
     color: aliceblue;
-}
-
-@media(max-width: 610px) {
-    .divPerson {
-        margin: auto 10px auto;
-    }
-    .image {
-        width: 30px;
-        height: 50px;
-    }
-    .divPerson strong {
-        font-size: 6px;
-    }
-    .image:hover {
-        width: 30px;
-        height: 50px;
-    }
 }
 
 .containerCre {
@@ -171,8 +158,31 @@
     cursor: pointer;
 }
 
+.creTitle div strong a {
+    text-decoration: none;
+    padding: 12px;
+    color: aliceblue;
+}
+
 .creTitle div strong:hover {
     background-color: #19547e;
     color: #FF3CAC;
     border: solid 2px #FF3CAC;
+}
+
+@media(max-width: 610px) {
+    .divPerson {
+        margin: auto 10px auto;
+    }
+    .image {
+        width: 30px;
+        height: 50px;
+    }
+    .divPerson strong {
+        font-size: 6px;
+    }
+    .image:hover {
+        width: 30px;
+        height: 50px;
+    }
 }
