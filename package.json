@@ -1,8 +1,8 @@
 {
-    "name": "websimpsom",
+    "name": "alanmestezk.github.io",
     "private": true,
     "version": "0.0.0",
-    "homepage": "/dist",
+    "homepage": "https://alanmestezk.github.io/websimpson",
     "type": "module",
     "scripts": {
         "dev": "vite",
