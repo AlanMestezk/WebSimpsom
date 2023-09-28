@@ -2,8 +2,8 @@
     "name": "websimpsom",
     "private": true,
     "version": "0.0.0",
+    "homepage": "/dist",
     "type": "module",
-    "homepage": "https://alanmestezk.github.io/websimpson.github.io",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
