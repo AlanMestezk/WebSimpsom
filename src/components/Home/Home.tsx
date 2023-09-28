@@ -22,7 +22,7 @@ interface HomeProps{
     subtitle?: string
 }
 
-export const HomeApp = ({title, subtitle}: HomeProps)=>{
+export const HomeApp = ({title}: HomeProps)=>{
 
     const [isLoad, setIsload] = useState(true)
 
