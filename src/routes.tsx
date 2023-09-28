@@ -20,7 +20,7 @@ export const router = createBrowserRouter(
             element: <Layout/>,
             children:[
                 {
-                    path: '/',
+                    path: '/websimpson',
                     element: <Home/>
                 },
                 {
