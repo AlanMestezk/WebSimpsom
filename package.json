@@ -2,7 +2,7 @@
     "name": "alanmestezk.github.io",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://alanmestezk.github.io/websimpson",
+    "homepage": "./",
     "type": "module",
     "scripts": {
         "dev": "vite",
