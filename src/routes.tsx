@@ -22,6 +22,7 @@ export const router = createBrowserRouter(
                 {
                     path: '/',
                     element: <Home/>
+                    
                 },
                 {
                     path: '/contact',
@@ -52,6 +53,7 @@ export const router = createBrowserRouter(
                     element: <MaggieSimpson/>
                 },
                 {
+                    
                     path: '*',
                     element:<NotFound/>
                 }
